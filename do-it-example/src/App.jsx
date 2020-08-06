@@ -1,11 +1,11 @@
 import React from 'react';
-import ChildComponent2 from './03/ChildComponent2';
+import StateExample from './03/StateExample';
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <ChildComponent2 objValue={{ age: 20 }} requiredStringValue="문자" />
+        <StateExample />
       </div>
     );
   }
