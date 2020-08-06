@@ -11,9 +11,9 @@ class Counter1 extends React.Component {
   }
 
   increaseCount() {
-    this.setState(({ count }) => {
-      count: count + 1;
-    });
+    this.setState(({ count }) => ({
+      count: count + 1,
+    }));
   }
 
   render() {
