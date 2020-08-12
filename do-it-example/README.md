@@ -66,3 +66,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+---
+
+> yarn test 로 테스트시 에러 메세지,
+> Error: `fsevents` unavailable (this watcher can only be used on Darwin)
+> 가 나올 때
+
+> brew install watchman 으로 설치를 해줘야 합니다.
