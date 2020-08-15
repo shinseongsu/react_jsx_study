@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import Button from '../04/Button';
 import Text from '../04/Text';
-import withHoc from '../05/withHoc';
+import withHoc from '../05/withHoC';
 
 const ButtonWithHoc = withHoc(Button);
 const TextWithHoc = withHoc(Text);

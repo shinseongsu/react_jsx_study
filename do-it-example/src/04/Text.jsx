@@ -23,7 +23,7 @@ class Text extends PureComponent {
   }
 }
 
-Text.propsTypes = {
+Text.propTypes = {
   children: PropTypes.node.isRequired,
   xsmall: PropTypes.bool,
   small: PropTypes.bool,
@@ -33,10 +33,14 @@ Text.propsTypes = {
   primary: PropTypes.bool,
 };
 
-export default withStyles(({ color, size }) => ({
+export default withStyles(({ color, size, responsive }) => ({
   default: {
     color: color.default,
     fontSize: size.md,
+    [responsive.small]: {
+      textAlign: 'center',
+      width: '100%',
+    },
   },
   xlarge: {
     fontSize: size.xg,
