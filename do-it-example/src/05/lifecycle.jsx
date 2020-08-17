@@ -22,4 +22,4 @@ export const withLoadData = lifecycle({
 });
 
 export const PageWithLoadData = withLoadData(Page);
-export const PageWithLoadDataAndLoading = compose(withLoadData, withLoading('서버 요청중'))(Page);
+export const PageWithLoadDataAndLoading = compose(withLoadData, withLoading('서버 요청중..'))(Page);
