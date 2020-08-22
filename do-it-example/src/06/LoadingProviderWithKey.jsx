@@ -28,6 +28,10 @@ export default (contextKey = DEFAULT_KEY) => {
     setLoading(loading) {
       this.setState({ loading });
     }
+
+    render() {
+      return this.props.children;
+    }
   }
 
   LoadingProvider.childContextTypes = {
